@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    background-color: #2ec4b6;
+	color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+code {
+	font-family: 'Source Code Pro', monospace;
+	font-size: 12px;
+}
+
+a {
+	font-family: 'Source Code Pro', monospace;
+	color: #ffcc99;
+}
+
+a:hover {
+	color: #ffba76;
+}
+
+.container {
+    margin-top: 10vh;
+}
+
+header {
+	background: white;
+    color: #2ec4b6;
+    font-weight: bold;
+    text-align: center;
+	padding: 20px;
+}
+
+.score-board {
+	border: 3px solid #fff;
+	width: 500px;
+	margin: 40px auto;
+	font-size: 60px;
+	border-radius: 4px;
+	text-align: center;
+	padding: 50px 70px;
+	position: relative;
+}
+
+.badge {
+	background: white;
+    color:#2ec4b6;
+	text-transform: uppercase;
+	font-size: 14px;
+    font-weight: bolder;
+	padding: 10px 6px;
+    border-radius: 5px;
+}
+
+#user-label {
+	position: absolute;
+	top: 50%;
+	left: -5%;
+	transform: translate(-10%, -50%);
+}
+
+#computer-label {
+	position: absolute;
+	top: 50%;
+	right: -5%;
+	transform: translate(10%, -50%);
+}
+
+.result {
+    margin-top: 5vh;
+	font-weight: 300;
+	text-align: center;
+	font-size: 32px;
+	line-height: 40px;
+}
+
+.result {
+	line-height: 50px;
+}
+
+.choices {
+	margin: 0 auto;
+	text-align: center;
+	padding: 40px 0;
+    margin-top: 8vh;
+}
+
+.choice {
+	display: inline-block;
+	border: 3px solid white;
+	border-radius: 50%;
+	padding: 10px;
+	margin: auto 10px;
+	transition: all 0.3s ease;
+}
+
+.choice:hover {
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 2s infinite;
+}
+
+.choice img {
+	filter: invert(100%);
+}
+
+#action-message {
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+    font-size: 20px;
+	margin: 100px 0;
+}
+
+.createdMsg {
+	text-align: center;
+	font-weight: lighter;
+	letter-spacing: 2px;
+    font-size: 20px;
+	margin-top: 0px;
+}
+
+.winningStyles {
+	border: 3px solid #4dcc7d;
+	background-color: #2ec4b6;
+	box-shadow: 0 0 20px #043507;
+}
+
+.losingStyles {
+	border: 3px solid #ff5151;
+	background-color: #2ec4b6;
+	box-shadow: 0 0 20px #2e0303;
+}
+
+.drawStyles {
+	border: 3px solid rgb(255, 242, 65);
+	background-color: #2ec4b6;
+	box-shadow: 0 0 20px #222;
+}
+
+sup {
+	margin: 0;
+	padding: 0;
+}
+
+@-webkit-keyframes shine {
+    from {
+      -webkit-mask-position: 150%;
+    }
+    
+    to {
+      -webkit-mask-position: -50%;
+    }
+  }
